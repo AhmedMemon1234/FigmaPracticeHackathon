@@ -2,26 +2,2529 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.Parentheader{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Childheader{
+  width: 100%;
+  height: 12vh;
+  background-color: black;
+  color: white;
+}
+.Childheader h1{
+  margin: 0 auto;
+padding-top: 3.7vh;
+font-size: 1.4vw;
+width: 50%;
+}
+
+.Childheader h2{
+margin-left: 85%;
+font-size: 1.4vw;
+width: 6%;
+margin-top: -4.5vh;
+}
+.Childheader span{
+  text-decoration: underline;
+  font-weight: 600;
+}
+.Childheader2{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-top: 70px;
+  display: flex;
+  position: absolute;
+}
+
+.Childheader2 h1{
+padding: 40px 130px;
+font-weight: 700;
+font-size: 2vw;
+}
+.Childheader2 ul{
+  display: flex;
+  margin-top: 8vh;
+  gap: 40px;
+font-weight: 450;
+  margin-left: 6vw;
+  z-index: 10;
+}
+.Childheader2 .Home{
+  border-bottom: 1px solid black;
+}
+.Childheader2 .inputsearch{
+  margin-left: 8vw;
+  width: 16%;
+  margin-top: 7vh;
+  font-size: 12px;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+.Childheader2 .icon{
+  margin-top: 9vh;
+  margin-left: -2vw;
+}
+
+.Childheader2 .icon2{
+  margin-top: 8vh;
+  margin-left: 2vw;
+  font-size: 2vw;
+}
+
+.Childheader2 .icon3{
+  margin-top: 8vh;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+
+
+.Childheader2 .icon4{
+  margin-top: 8vh;
+  margin-left: 1vw;
+  font-size: 2vw;
+}
+
+.Parenthero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 120px;
+  border-top: 1px solid gray;
+}
+.Childhero{
+  width: 100%;
+  height: 100%;
+}
+.Childhero ul{
+  font-weight: 600;
+  margin-left: 8vw;
+  margin-top:10vh;
+  line-height: 50px;
+}
+.Childhero .Bigbanner{
+  margin-top: -73vh;
+  margin-left: 28vw;
+  width: 66%;
+  height: 70vh;
+}
+.Childhero .Iphonelogo{
+  background-color: black;
+  margin-left: 35vw;
+  margin-top: -60vh;
+  width: 5%;
+}
+.Childhero h1{
+  margin-left: 42vw;
+  color: white;
+  font-size: 2vw;
+  margin-top: -9.5vh;
+}
+.Childhero .Heading{
+  margin-top: 6vh;
+  margin-left: 35vw;
+  font-weight: 600;
+  font-size: 5vw;
+}
+
+.Childhero button{
+  margin-top: 2vh;
+  margin-left: 35vw;
+  color: white;
+  font-size: 1.5vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .arrowicon{
+  margin-top: -5vh;
+  margin-left: 43vw;
+  color: white;
+  font-size: 2.5vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+.Childhero .divider{
+  margin-left: 55vw;
+  width: 10%;
+  margin-top: 40px;
+}
+.Parentsale{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 57px;
+}
+.Childsale{
+  width: 100%;
+  height: 100%;
+}
+.Childsale .smallbox{
+  background-color: rgb(201, 3, 3);
+  width: 1.5%;
+  height: 50px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+.Childsale span{
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.Parentsale .FlashHead{
+  font-size:3.5vw;
+  margin-top: 20px;
+  margin-left: 7.5vw;
+  font-weight: 600;
+}
+.Parentsale .Days{
+  display: flex;
+  position: absolute;
+}
+
+.Parentsale .Spans{
+  display: flex;
+  position: absolute;
+  margin-left: 40vw;
+  gap: 70px;
+
+}
+
+.Parentsale .Spansdot{
+  display: flex;
+  position: absolute;
+  margin-left: 45.5vw;
+  gap: 100px;
+  font-weight: 100;
+  font-size: 4vw;
+  margin-top: 210px;
+  color: red;
+
+}
+.Days h1{
+  margin-top: 200px;
+  margin-left: 40vw;
+  font-weight: 600;
+  font-size: 1.2vw;
+  word-spacing: 12px;
+}
+
+.Spans .hour1{
+  margin-top: 230px;
+  font-weight: 700;
+  font-size: 2.7vw;
+}
+.Parentsale .Arrowicon2{
+margin-top: 230px;
+font-size: 3vw;
+margin-right: 3vw;
+background-color: lightgray;
+border-radius: 50px;
+}
+.Parentitems{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.Childitem1{
+width: 200px;
+overflow: hidden;
+border-radius: 10px;
+margin: 15px;
+transition: 1s ease;
+}
+.Childitem1 .img1{
+  width: 100%;
+  padding: 10px;
+  height: 220px;
+  cursor: context-menu;
+}
+.Childitem1 .img2{
+  width: 50%;
+  padding: 10px;
+  height: 220px;
+  overflow: hidden;
+  cursor: context-menu;
+}
+.card1content{
+  padding: 5px;
+  cursor: context-menu;
+}
+.card1content p{
+  font-size: 15px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.card1content h1{
+  font-size: 20px;
+  padding-top: 5px;
+  color: rgb(255, 102, 0);
+}
+.card1content span{
+  font-size: 13px;
+  text-decoration: line-through;
+  color:  gray;
+}
+
+.card1content .star{
+  margin-top: -40px;
+  width: 120px;
+}  
+.card1content h3{
+  margin-top: -75px;
+  margin-left: 100px;
+  color: gray;
+}
+.Parentitems .btn1{
+  background-color: #DB4444;
+  color: white;
+  padding: 16px 48px 16px 48px;
+  font-size: 16px;
+  justify-self: center;
+}
+
+.Parentcategory{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.Childcategory .smallbox2{
+  background-color: rgb(201, 3, 3);
+  width: 20%;
+  height: 40px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+
+.Childcategory span{
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.Browsehead h1{
+  font-size: 3.5vw;
+  font-weight: 600;
+  margin-top: 230px;
+}
+.Browsehead .Arrowicon3{
+  position: absolute;
+  margin-top: -50px;
+  font-size: 3vw;
+  margin-left: 75vw;
+  background-color: lightgray;
+  border-radius: 50px;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.Browsehead .Arrowicon4{
+  position: absolute;
+  margin-top: -50px;
+  font-size: 3vw;
+  margin-left: 80vw;
+  background-color: lightgray;
+  border-radius: 50px;
   }
+  .Categorysec{
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    flex-wrap: wrap;
+  }
+  .Categorysec .Categoryimage{
+    width: 170px;
+    height: 145px;
+    margin: 27px;
+  }
+.Parentselling{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -80px;
 }
+.Childselling .smallbox4{
+  background-color: rgb(201, 3, 3);
+  width: 20%;
+  height: 40px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+
+.Childselling span{
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.Sellinghead h1{
+  font-size: 3vw;
+  font-weight: 600;
+  margin-top: 230px;
+}
+.Sellinghead button{
+  position: absolute;
+  background-color: #DB4444;
+  margin-left: 73.2vw;
+  margin-top: -43px;
+  padding: 16px 48px 16px 48px;
+  color: white;
+  font-size: 1vw;
+}
+.Parentitems2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.Childitem2{
+width: 250px;
+overflow: hidden;
+border-radius: 10px;
+margin: 15px;
+transition: 1s ease;
+}
+.Childitem2 .img3{
+  width: 100%;
+  padding: 10px;
+  height: 220px;
+  cursor: context-menu;
+}
+.card2content{
+  padding: 5px;
+  cursor: context-menu;
+}
+.card2content p{
+  font-size: 15px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.card2content h1{
+  font-size: 20px;
+  padding-top: 5px;
+  color: rgb(255, 102, 0);
+}
+.card2content span{
+  font-size: 13px;
+  text-decoration: line-through;
+  color:  gray;
+}
+
+.card2content .star22{
+  margin-top: -40px;
+  width: 120px;
+}  
+.card2content h3{
+  margin-top: -75px;
+  margin-left: 100px;
+  color: gray;
+}
+
+.Parentmic{
+  width: 85%;
+  height: 472px;
+  position: relative;
+  display: flex;
+  margin-top: 130px;
+  background-color: black;
+  justify-content: center;
+  margin-left: 7.5vw;
+}
+.Childmic .bigban{
+width: 50%;
+height: 100%;
+margin-left: 45vw;
+padding-right: 40px;
+}
+.Content h2{
+  color: #00FF66;
+  margin-top: -400px;
+  margin-left:5vw;
+  font-size: 1vw;
+  font-weight: 550;
+}
+.Content h1{
+  color: white;
+  margin-top: 30px;
+  margin-left:5vw;
+  font-size: 4vw;
+  font-weight: 550;
+}
+.Content .Timeframe{
+  margin-top: 30px;
+  margin-left:5vw;
+}
+.Content button{
+  background-color: #00FF66;
+  margin-left: 5vw;
+  color: white;
+  margin-top: 30px;
+  padding: 16px 48px 16px 48px;
+}
+.Parentproducthead{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -80px;
+}
+.Childproducthead .smallbox5{
+  background-color: rgb(201, 3, 3);
+  width: 20%;
+  height: 40px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+
+.Childproducthead span{
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.producthead h1{
+  font-size: 3vw;
+  font-weight: 600;
+  margin-top: 230px;
+}
+.producthead .Arrowicon6{
+  position: absolute;
+  margin-top: -50px;
+  font-size: 3vw;
+  margin-left: 75vw;
+  background-color: lightgray;
+  border-radius: 50px;
+  }
+
+.producthead .Arrowicon7{
+  position: absolute;
+  margin-top: -50px;
+  font-size: 3vw;
+  margin-left: 80vw;
+  background-color: lightgray;
+  border-radius: 50px;
+  }
+  .Parentitems3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  .Childitem3{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 1s ease;
+  }
+  .Childitem3 .img4{
+    width: 100%;
+    padding: 10px;
+    height: 220px;
+    cursor: context-menu;
+  }
+  .card3content{
+    padding: 5px;
+    cursor: context-menu;
+  }
+  .card3content p{
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  
+  .card3content h1{
+    font-size: 20px;
+    padding-top: 5px;
+    color: rgb(255, 102, 0);
+  }
+
+  .card3content .star32{
+    margin-top: -73px;
+    margin-left: 60px;
+    width: 120px;
+  }  
+  .card3content h3{
+    margin-top: -75px;
+    margin-left: 170px;
+    color: gray;
+  }
+  
+.Parentitems3 .btn2{
+  background-color: #DB4444;
+  color: white;
+  padding: 16px 48px 16px 48px;
+  font-size: 16px;
+  margin-top: 40px;
+  justify-self: center;
+}
+.Parentfeaturedhead{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.Childfeaturedhead .smallbox6{
+  background-color: rgb(201, 3, 3);
+  width: 20%;
+  height: 40px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+
+.Childfeaturedhead span{
+  position: absolute;
+  margin-top: 5px;
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.featuredhead h1{
+  font-size: 3vw;
+  font-weight: 600;
+  margin-top: 200px;
+}
+.Parentfeatured {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  gap: 20px; 
+}
+
+.Parentfeatured .FeaturedBan {
+  width: 500px;
+  height: 500px;
+  margin-top: 30px; 
+}
+
+.Parentfeatured .FeaturedBan2 {
+  width: 550px;
+  height: 270px;
+  margin-top: 27px;
+}
+
+.Parentfeatured .FeaturedBan3 {
+  width: 260px;
+  height: 210px;
+  margin-left: 40vw;
+  margin-top: -18.1%;
+}
+
+.Parentfeatured .FeaturedBan4 {
+  width: 260px;
+  height: 210px;
+  margin-top: -18.1%;
+
+}
+
+.Parenticon{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+  overflow: hidden;
+}
+.Childicon{
+width: 80px;
+overflow: hidden;
+border-radius: 10px;
+margin: 15px;
+transition: 1s ease;
+}
+.Childitem1 .Iconservice{
+  width: 100%;
+  padding: 10px;
+  height: 220px;
+  cursor: context-menu;
+}
+.Childiconcontent{
+  padding: 5px;
+  padding-top: 30px;
+  cursor: context-menu;
+}
+.Childiconcontent p{
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+.Childiconcontent h1{
+  font-size: 20px;
+  font-weight: 650;
+  padding-top: 5px;
+  color: black;
+}
+.Parentfooter{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.Childfooter h1{
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding-top: 80px;
+  padding-left: 80px;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.Childfooter .subfoot{
+  font-size: 1.7vw;
+  font-size: 500;
+}
+.Childfooter .paragraphfoot{
+font-size: 1.3vw;
+font-weight: 450;
+}
+.Childfooter input{
+  background-color: black;
+  border: 2px solid white;
+  font-size: 1.3vw;
+  color: gray;
+   padding: 10px;
+}
+.Childfooter .Iconsend{
+  width: 10%;
+  margin-left: 200px;
+  padding-bottom: 100px;
+  margin-top: -36px;
+}
+.Childfooter2 h1{
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+.Childfooter2 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  padding-left: 60px;
+}
+
+.Childfooter3 h1{
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+.Childfooter3 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 40px;
+  padding-left: 60px;
+}
+
+.Childfooter4 h1{
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+.Childfooter4 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  padding-left: 60px;
+}
+
+.Childfooter5 h1{
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 80px;
+}
+.Childfooter5 p{
+  padding-top: 30px;
+  color: gray;
+  line-height: 30px;
+  padding-left: 60px;
+}
+.Childfooter5 .imggoogle{
+  padding-left: 65px;
+  width: 300px;
+}
+.Childfooter5 .imgicons{
+  padding-left: 105px;
+  width: 250px;
+  padding-top: 30px;
+}
+.Childfooter6 p{
+  color: gray;
+  opacity: 60%;
+  width: 98.5vw;
+  border-top: 1px solid rgb(70, 70, 70);
+  padding-left: 460px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ParentSign{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.ChildSign .line{
+  border-bottom: 1px solid gray;
+  padding-top: 140px;
+  width: 98.7vw;
+
+}
+.ChildSign .SignImage{
+  margin-top: 80px;
+  height: 720px;
+  width: 45%;
+  padding-bottom: 80px;
+}
+.Signcontent{
+  align-items: center;
+  justify-items: center;
+}
+.Signcontent h1{
+  margin-top: -650px;
+  font-size: 36px;
+  font-weight: 500;
+  margin-left: 40vw;
+}
+.Signcontent p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 31vw;
+  margin-top: 20px;
+}
+.Signcontent input{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 45vw;
+  margin-top: 20px;
+  padding-bottom: -20px;
+  width: 350px;
+  line-height: 50px;
+  border-bottom: 1px solid gray;
+}
+.Signcontent .Createaccount{
+  margin-left:45vw;
+  margin-top: 40px;
+  background-color: #DB4444;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 122px 16px 122px;
+}
+.Signcontent .buttongoogle{
+  margin-left: 45vw;
+  padding: 16px 87px 16px 120px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.Signcontent .Googleicon{
+  margin-left: 51vw;
+  margin-top: 34px;
+  position: absolute;
+  font-size: 30px;
+}
+.Signcontent h2{
+  margin-left: 45vw;
+  margin-top: 30px;
+}
+.Signcontent span{
+  color: gray;
+}
+.Signcontent .span2{
+  border-bottom: 1px solid black;
+  color: black;
+  margin-left: 1vw;
+}
+
+.Parentitems5{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.Headwish h1{
+  position: absolute;
+  margin-top: -100px;
+  z-index: 100;
+  margin-left: 40px;
+  font-size: 2vw;
+  font-weight: 550;
+}
+
+.Buttonwish button{
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 870px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 16px 48px 16px 48px;
+}
+
+
+  .ParentJustfor{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  .ChildJustfor .smallbox7{
+    background-color: rgb(201, 3, 3);
+    width: 20%;
+    height: 40px;
+    margin-top: 60px;
+    margin-left: 7.5vw;
+    border-radius: 2px;
+  }
+  
+  .ChildJustfor span{
+    position: absolute;
+    margin-top: 5px;
+    color:black;
+    margin-left: 2.5vw;
+  }
+  .JustforHead button{
+    position: absolute;
+    border: 1px solid black;
+    margin-left: 73.2vw;
+    margin-top: 43px;
+    padding: 12px 48px 12px 48px;
+    color: black;
+    font-size: 1.5vw;
+  }
+
+  .Parentitems6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 60px;
+    overflow: hidden;
+  }
+  .Childitem6{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 1s ease;
+  }
+  .Childitem6 .img6{
+    width: 100%;
+    padding: 10px;
+    height: 220px;
+    cursor: context-menu;
+  }
+  .card6content{
+    padding: 5px;
+    cursor: context-menu;
+  }
+  .card6content p{
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  
+  .card6content h1{
+    font-size: 20px;
+    padding-top: 5px;
+    color: rgb(255, 102, 0);
+  }
+
+  .card6content .star6{
+    margin-top: -35px;
+    margin-left: 0px;
+    width: 120px;
+  }  
+  .card6content h3{
+    margin-top: -75px;
+    margin-left: 100px;
+    color: gray;
+  }
+  
+  .Parentitems5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-top: 260px;
+    overflow: hidden;
+  }
+  .Childitem5{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 15px;
+  transition: 1s ease;
+  }
+  .Childitem5 .img5{
+    width: 100%;
+    padding: 10px;
+    height: 220px;
+    cursor: context-menu;
+  }
+  .card5content{
+    padding: 5px;
+    cursor: context-menu;
+  }
+  .card5content p{
+    font-size: 15px;
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+  
+  .card5content h1{
+    font-size: 20px;
+    padding-top: 5px;
+    color: red;
+  }
+.card5content span{
+  margin-left: 10px;
+  text-decoration: line-through;
+  color: gray;
+}
+  
+@media (max-width:480px){
+  .Parentheader{
+    width: 100%;
+    height: 70px;
+  }
+  .Childheader h1{
+    margin: 0 auto;
+    font-size: 2vw;
+    width: auto;
+    padding-top: 27px;
+    padding-left: 7px;
+  }
+  
+  .Childheader h2{
+    font-size: 2.5vw;
+    width: 15%;
+    margin-top: -15px;
+    padding-left: -25px;
+  }
+  
+.Childheader2{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-top: 70px;
+  display: flex;
+  position: absolute;
+}
+
+.Childheader2 h1{
+  position: absolute;
+padding: 30px 10px;
+font-weight: 700;
+font-size: 6vw;
+}
+.Childheader2 ul{
+  display: none;
+}
+.Childheader2 .inputsearch{
+  position: absolute;
+  margin-left: 30vw;
+  width: 40%;
+  height: 15px;
+  margin-top: 33px;
+  font-size: 2.3vw;
+  background-color: #F5F5F5;
+  padding: 20px;
+  padding-left:10px;
+}
+.Childheader2 .icon{
+  position: absolute;
+  margin-top: 43px;
+  font-size: 20px;
+  margin-left: 62vw;
+}
+
+.Childheader2 .icon2{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 73vw;
+  font-size: 20px;
+}
+
+.Childheader2 .icon3{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 79vw;
+  font-size: 20px;
+}
+
+.Childheader2 .icon4{
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 86vw;
+  font-size: 20px;
+}
+.Childhero ul{
+  font-weight: 600;
+  margin-left: 8vw;
+  margin-top:10vh;
+  line-height: 50px;
+}
+.Childhero .Bigbanner{
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 84%;
+  height: 400px;
+}
+.Childhero .Iphonelogo{
+  background-color: black;
+  margin-left: 15vw;
+  margin-top: -350px;
+  width: 7%;
+}
+.Childhero h1{
+  margin-left: 25vw;
+  color: white;
+  font-size: 3vw;
+  margin-top: -30px;
+}
+.Childhero .Heading{
+  margin-top: 80px;
+  margin-left: 15vw;
+  font-weight: 600;
+  font-size: 7vw;
+}
+
+.Childhero button{
+  margin-top: 70px;
+  margin-left: 15vw;
+  color: white;
+  font-size: 3vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .arrowicon{
+  margin-top: -20px;
+  margin-left: 30vw;
+  color: white;
+  font-size: 3.5vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .divider{
+  margin-left: 39vw;
+  width: 20%;
+  margin-top: 20px;
+}
+.Parentsale .Days{
+  display: flex;
+  position: absolute;
+}
+
+.Parentsale .Spans{
+  display: flex;
+  position: absolute;
+  margin-left: 30vw;
+  gap: 14vw;
+
+}
+
+.Parentsale .Spansdot{
+  display: flex;
+  position: absolute;
+  margin-left: 40.5vw;
+  gap: 18vw;
+  font-weight: 600;
+  font-size: 4vw;
+  margin-top: 100px;
+  color: red;
+
+}
+.Days h1{
+  margin-top: 80px;
+  margin-left: 30vw;
+  font-weight: 600;
+  font-size: 2vw;
+  word-spacing: 2.5vw;
+}
+
+.Spans .hour1{
+  margin-top: 110px;
+  font-weight: 700;
+  margin-left:0vw;
+  font-size: 4vw;
+}
+.Parentsale .Arrowicon2{
+margin-top: 150px;
+font-size: 5vw;
+margin-right: 7vw;
+background-color: lightgray;
+border-radius: 50px;
+}
+.Childsale .smallbox{
+  background-color: rgb(201, 3, 3);
+  width: 1.5%;
+  height: 40px;
+  margin-top: 50px;
+  margin-left: 8.5vw;
+  border-radius: 2px;
+}
+.Browsehead .Arrowicon3{
+  font-size: 4vw;
+}
+
+.Browsehead .Arrowicon4{
+  font-size: 4vw;
+}
+.Sellinghead h1{
+  font-size: 5vw;
+  font-weight: 600;
+  margin-top: 230px;
+}
+.Sellinghead button{
+  position: absolute;
+  background-color: #DB4444;
+  margin-left: 55.2vw;
+  margin-top: -25px;
+  padding: 8px 24px 8px 24px;
+  color: white;
+  font-size: 3vw;
+}
+.Parentmic{
+  width: 85%;
+  height: 672px;
+  position: relative;
+  display: flex;
+  margin-top: 130px;
+  background-color: black;
+  justify-content: center;
+  margin-left: 7.5vw;
+}
+.Childmic .bigban{
+width: 50%;
+height: 100%;
+padding-top: 350px;
+margin-left: 27vw;
+padding-right: 40px;
+}
+.Content h2{
+  color: #00FF66;
+  margin-top: -560px;
+  margin-left:5vw;
+  font-size: 15px;
+  font-weight: 550;
+}
+.Content h1{
+  color: white;
+  margin-top: 30px;
+  margin-left:5vw;
+  font-size: 25px;
+  font-weight: 550;
+}
+.Content .Timeframe{
+  margin-top: 30px;
+  margin-left:5vw;
+}
+.Content button{
+  background-color: #00FF66;
+  margin-left: 5vw;
+  color: white;
+  margin-top: 30px;
+  padding: 16px 80px 16px 80px;
+}
+
+.Parentfeatured .FeaturedBan {
+  width: 400px;
+  height: 500px;
+  margin-top: 30px; 
+}
+
+.Parentfeatured .FeaturedBan2 {
+  width: 400px;
+  height: 250px;
+  margin-top: -21px;
+}
+
+.Parentfeatured .FeaturedBan3 {
+  width: 400px;
+  height: 210px;
+  margin-left: -0px;
+  margin-top: -20px;
+}
+
+.Parentfeatured .FeaturedBan4 {
+  width: 400px;
+  height: 210px;
+  margin-top: -20px;
+
+}
+.Parentfooter{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.Childfooter h1{
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding-top: 80px;
+  padding-left: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.Childfooter .subfoot{
+  font-size: 20px;
+  font-size: 500;
+}
+.Childfooter .paragraphfoot{
+font-size: 16px;
+font-weight: 450;
+}
+.Childfooter input{
+  background-color: black;
+  border: 2px solid white;
+  font-size: 15px;
+  color: gray;
+   padding: 10px;
+}
+.Childfooter .Iconsend{
+  width: 10%;
+  margin-left: 170px;
+  padding-bottom: 100px;
+  margin-top: -36px;
+}
+.Childfooter2 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 0px;
+}
+.Childfooter2 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  padding-left: 60px;
+}
+
+.Childfooter3 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -215px;
+  padding-top: 280px;
+}
+.Childfooter3 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 40px;
+  margin-left: -215px;
+}
+
+.Childfooter4 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -215px;
+  padding-top: 620px;
+}
+.Childfooter4 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  margin-left: -215px;
+}
+
+.Childfooter5 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+.Childfooter5 p{
+  padding-top: 30px;
+  color: gray;
+  line-height: 30px;
+  padding-left: 60px;
+}
+.Childfooter5 .imggoogle{
+  padding-left: 65px;
+  width: 300px;
+}
+.Childfooter5 .imgicons{
+  padding-left: 105px;
+  width: 250px;
+  padding-top: 30px;
+}
+.Childfooter6 p{
+  color: gray;
+  opacity: 60%;
+  width: 98.5vw;
+  margin-top: 20px;
+  font-size: 3vw;
+  border-top: 1px solid rgb(70, 70, 70);
+  padding-left: 110px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.ParentSign{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.ChildSign .line{
+  padding-top: 140px;
+  width: 98vw;
+
+}
+.ChildSign .SignImage{
+  margin-top: 80px;
+  height: 720px;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.Signcontent{
+  align-items: center;
+  justify-items: center;
+  margin-left: -210px;
+  margin-top: 650px;
+}
+.Signcontent h1{
+  margin-top: -650px;
+  font-size: 7vw;
+  font-weight: 500;
+  margin-left: 31vw;
+}
+.Signcontent p{
+  font-size: 4vw;
+  font-weight: 400;
+  margin-left: 16vw;
+  margin-top: 20px;
+}
+.Signcontent input{
+  font-size: 3.5vw;
+  font-weight: 400;
+  margin-left: 32.5%;
+  margin-top: 20px;
+  padding-bottom: -20px;
+  width: 70vw;
+  line-height: 50px;
+  border-bottom: 1px solid gray;
+}
+.Signcontent .Createaccount{
+  margin-left:32.5%;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 3.3vw;
+  background-color: #DB4444;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 24vw 16px 24vw;
+}
+.Signcontent .buttongoogle{
+  margin-left: 32.5%;
+  width: 100%;
+  font-size: 3.3vw;
+  padding: 16px 15vw 16px 24vw;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.Signcontent .Googleicon{
+  margin-left: 40vw;
+  margin-top: 35px;
+  position: absolute;
+  font-size: 6vw;
+}
+.Signcontent h2{
+  margin-left: 45vw;
+  margin-top: 20px;
+  font-size: 3vw;
+}
+.Signcontent span{
+  color: gray;
+}
+.Signcontent .span2{
+  border-bottom: 1px solid black;
+  color: black;
+  margin-left: 1vw;
+}
+.Headwish h1{
+  margin-top: -100px;
+  margin-left: 60px;
+  font-size: 30px;
+}
+.Buttonwish button{
+  margin-left: 60px;
+  width: auto;
+  margin-top: -30px;
+  padding: 10px 20px 10px 20px;
+}
+.JustforHead button{
+  font-size: 3vw;
+  margin-top: 60px;
+  margin-left: 68vw;
+  padding: 10px 5vw 10px 5vw;
+}
+}
+
+@media (min-width:481px) and (max-width:768px){
+  .Parentheader{
+    width: 100%;
+    height: 70px;
+  }
+  .Childheader h1{
+   margin: 0 auto;
+   font-size: 2vw;
+   width: auto;
+   padding-left: 5px;
+   padding-top: 18px;
+  }
+  
+  .Childheader h2{
+    font-size: 2vw;
+    width: 15%;
+    margin-top: -20px;
+    padding-left: -25px;
+  }
+  
+  
+  .Childheader2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 70px;
+    display: flex;
+    position: absolute;
+  }
+  
+  .Childheader2 h1{
+    position: absolute;
+  padding: 15px 7vw;
+  font-weight: 700;
+  font-size: 5vw;
+  }
+  .Childheader2 ul{
+    display: none;
+  }
+  .Childheader2 .inputsearch{
+    position: absolute;
+    margin-left: 32vw;
+    width: 40%;
+    height: 15px;
+    margin-top: 33px;
+    font-size: 2.3vw;
+    background-color: #F5F5F5;
+    padding: 20px;
+    padding-left:10px;
+  }
+  .Childheader2 .icon{
+    position: absolute;
+    margin-top: 38px;
+    font-size: 30px;
+    margin-left: 65vw;
+  }
+  
+  .Childheader2 .icon2{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 76vw;
+    font-size: 30px;
+  }
+  
+  .Childheader2 .icon3{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 82vw;
+    font-size: 30px;
+  }
+  
+  .Childheader2 .icon4{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 88vw;
+    font-size: 30px;
+  }
+  
+.Childhero ul{
+  font-weight: 600;
+  margin-left: 8vw;
+  margin-top:10vh;
+  line-height: 50px;
+}
+.Childhero .Bigbanner{
+  margin-top: 50px;
+  margin: 0 auto;
+  width: 84%;
+  height: 600px;
+}
+.Childhero .Iphonelogo{
+  background-color: black;
+  margin-left: 15vw;
+  margin-top: -520px;
+  width: 7%;
+}
+.Childhero h1{
+  margin-left: 25vw;
+  color: white;
+  font-size: 3vw;
+  margin-top: -30px;
+}
+.Childhero .Heading{
+  margin-top: 80px;
+  margin-left: 15vw;
+  font-weight: 600;
+  font-size: 7vw;
+}
+
+.Childhero button{
+  margin-top: 70px;
+  margin-left: 15vw;
+  color: white;
+  font-size: 3vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .arrowicon{
+  margin-top: -30px;
+  margin-left: 30vw;
+  color: white;
+  font-size: 3.5vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .divider{
+  margin-left: 39vw;
+  width: 20%;
+  margin-top: 0px;
+}
+
+.Content h2{
+  color: #00FF66;
+  margin-top: -400px;
+  margin-left:5vw;
+  font-size: 15px;
+  font-weight: 550;
+}
+.Content h1{
+  color: white;
+  margin-top: 30px;
+  margin-left:5vw;
+  font-size: 25px;
+  font-weight: 550;
+}
+.Childsale .smallbox{
+  background-color: rgb(201, 3, 3);
+  width: 1.5%;
+  height: 40px;
+  margin-top: 160px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+.Parentsale .Days{
+  display: flex;
+  position: absolute;
+}
+
+.Parentsale .Spans{
+  display: flex;
+  position: absolute;
+  margin-left: 30vw;
+  gap: 14vw;
+
+}
+
+.Parentsale .Spansdot{
+  display: flex;
+  position: absolute;
+  margin-left: 40.5vw;
+  gap: 18vw;
+  font-weight: 600;
+  font-size: 4vw;
+  margin-top: 220px;
+  color: red;
+
+}
+.Days h1{
+  margin-top: 200px;
+  margin-left: 30vw;
+  font-weight: 600;
+  font-size: 2vw;
+  word-spacing: 2.5vw;
+}
+
+.Spans .hour1{
+  margin-top: 230px;
+  font-weight: 700;
+  margin-left:0vw;
+  font-size: 4vw;
+}
+.Parentsale .Arrowicon2{
+margin-top: 280px;
+font-size: 3vw;
+margin-right: 1vw;
+background-color: lightgray;
+border-radius: 50px;
+}
+.Parentfeatured .FeaturedBan {
+  width: 400px;
+  height: 500px;
+  margin-top: 30px; 
+}
+
+.Parentfeatured .FeaturedBan2 {
+  width: 400px;
+  height: 250px;
+  margin-top: -21px;
+}
+
+.Parentfeatured .FeaturedBan3 {
+  width: 400px;
+  height: 210px;
+  margin-left: -0px;
+  margin-top: -20px;
+}
+
+.Parentfeatured .FeaturedBan4 {
+  width: 400px;
+  height: 210px;
+  margin-top: -20px;
+}
+.Parentfooter{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  background-color: black;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+.Childfooter h1{
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding-top: 80px;
+  padding-left: 50px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.Childfooter .subfoot{
+  font-size: 20px;
+  font-size: 500;
+}
+.Childfooter .paragraphfoot{
+font-size: 16px;
+font-weight: 450;
+}
+.Childfooter input{
+  background-color: black;
+  border: 2px solid white;
+  font-size: 15px;
+  color: gray;
+   padding: 10px;
+}
+.Childfooter .Iconsend{
+  width: 10%;
+  margin-left: 170px;
+  padding-bottom: 100px;
+  margin-top: -36px;
+}
+.Childfooter2 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -265px;
+  padding-top: 320px;
+}
+.Childfooter2 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  margin-left: -265px;
+}
+
+.Childfooter3 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -265px;
+  padding-top: 550px;
+}
+.Childfooter3 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 40px;
+  margin-left: -265px;
+}
+
+.Childfooter4 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: -265px;
+  padding-top: 850px;
+}
+.Childfooter4 p{
+  padding-top: 30px;
+  color: white;
+  line-height: 30px;
+  margin-left: -265px;
+}
+
+.Childfooter5 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+.Childfooter5 p{
+  padding-top: 30px;
+  color: gray;
+  line-height: 30px;
+  padding-left: 60px;
+}
+.Childfooter5 .imggoogle{
+  padding-left: 65px;
+  width: 300px;
+}
+.Childfooter5 .imgicons{
+  padding-left: 105px;
+  width: 250px;
+  padding-top: 30px;
+}
+.Childfooter6 p{
+  color: gray;
+  opacity: 60%;
+  width: 98.5vw;
+  margin-top: 20px;
+  font-size: 2vw;
+  border-top: 1px solid rgb(70, 70, 70);
+  padding-left: 33vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ParentSign{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.ChildSign .line{
+  padding-top: 140px;
+  width: 96vw;
+
+}
+.ChildSign .SignImage{
+  margin-top: 80px;
+  height: 720px;
+  width: 100%;
+  padding-bottom: 80px;
+}
+.Signcontent{
+  align-items: center;
+  justify-items: center;
+  margin-left: -210px;
+  margin-top: 650px;
+}
+.Signcontent h1{
+  margin-top: -650px;
+  font-size: 5vw;
+  font-weight: 500;
+  margin-left: 10vw;
+}
+.Signcontent p{
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-left: -4vw;
+  margin-top: 20px;
+}
+.Signcontent input{
+  font-size: 2.5vw;
+  font-weight: 400;
+  margin-left: 28%;
+  margin-top: 20px;
+  padding-bottom: -20px;
+  width: 70vw;
+  line-height: 50px;
+  border-bottom: 1px solid gray;
+}
+.Signcontent .Createaccount{
+  margin-left:28%;
+  width: 100%;
+  margin-top: 40px;
+  font-size: 3.3vw;
+  background-color: #DB4444;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 24vw 16px 24vw;
+}
+.Signcontent .buttongoogle{
+  margin-left: 28%;
+  width: 100%;
+  font-size: 3.3vw;
+  padding: 16px 15vw 16px 24vw;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+.Signcontent .Googleicon{
+  margin-left: 38vw;
+  margin-top: 35px;
+  position: absolute;
+  font-size: 6vw;
+}
+.Signcontent h2{
+  margin-left: 45vw;
+  margin-top: 20px;
+  font-size: 2.5vw;
+}
+.Signcontent span{
+  color: gray;
+}
+.Signcontent .span2{
+  border-bottom: 1px solid black;
+  color: black;
+  margin-left: 1vw;
+}
+
+.Headwish h1{
+  margin-top: -100px;
+  margin-left: 200px;
+  font-size: 30px;
+}
+.Buttonwish button{
+  margin-left: 200px;
+  width: auto;
+  margin-top: -30px;
+  padding: 10px 20px 10px 20px;
+}
+.JustforHead button{
+  font-size: 3vw;
+  margin-top: 60px;
+  margin-left: 68vw;
+  padding: 10px 5vw 10px 5vw;
+}
+}
+
+@media (min-width:769px) and (max-width:1024px){
+  .Parentheader{
+    width: 100%;
+  }
+  .Childheader h1{
+   margin: 0 auto;
+   padding-top: 10px;
+   font-size: 1.3vw;
+  }
+  
+  .Childheader h2{
+    font-size: 2vw;
+    width: 15%;
+    margin-top: -22px;
+    padding-left: -25px;
+  }
+  
+.Childheader2{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  margin-top: 70px;
+  display: flex;
+  position: absolute;
+}
+
+.Childheader2 h1{
+  position: absolute;
+padding: 15px 20px;
+font-weight: 700;
+font-size: 5vw;
+}
+.Childheader2 ul{
+  position: absolute;
+  width: 50%;
+  margin-left: 30vw;
+  margin-top: 48px;
+  font-size: 1.5vw;
+}
+.Childheader2 .Home{
+  height: 20px;
+}
+.Childheader2 .inputsearch{
+  position: absolute;
+  margin-left: 65vw;
+  width: 20%;
+  height: 30px;
+  margin-top: 40px;
+  font-size: 8px;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+.Childheader2 .icon{
+  position: absolute;
+  margin-top: 45px;
+  font-size: 28px;
+  margin-left: 81vw;
+}
+
+.Childheader2 .icon2{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 87vw;
+  font-size: 28px;
+}
+.Childheader2 .icon3{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 91vw;
+  font-size: 28px;
+}
+
+.Childheader2 .icon4{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 95vw;
+  font-size: 30px;
+}
+
+.Content h2{
+  color: #00FF66;
+  margin-top: -400px;
+  margin-left:5vw;
+  font-size: 20px;
+  font-weight: 550;
+}
+.Content h1{
+  color: white;
+  margin-top: 30px;
+  margin-left:5vw;
+  font-size: 30px;
+  font-weight: 550;
+}
+.Childhero ul{
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top:20px;
+  line-height: 55px;
+}
+.Childhero .Bigbanner{
+  margin-top: -470px;
+  width: 70%;
+  height: 455px;
+}
+.Childhero .Iphonelogo{
+  background-color: black;
+  margin-left: 32vw;
+  margin-top: -430px;
+  width: 7%;
+}
+.Childhero h1{
+  margin-left: 39vw;
+  color: white;
+  font-size: 3vw;
+  margin-top: -55px;
+}
+.Childhero .Heading{
+  margin-top: 40px;
+  margin-left: 32vw;
+  font-weight: 600;
+  font-size: 6vw;
+}
+
+.Childhero button{
+  margin-top: 20px;
+  margin-left: 32vw;
+  color: white;
+  font-size: 3vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .arrowicon{
+  margin-top: -39px;
+  margin-left: 47vw;
+  color: white;
+  font-size: 3.5vw;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.Childhero .divider{
+  margin-left: 55vw;
+  width: 20%;
+  margin-top: 0px;
+}
+
+.Parentsale .Days{
+  display: flex;
+  position: absolute;
+}
+
+.Childsale .smallbox{
+  background-color: rgb(201, 3, 3);
+  width: 1.5%;
+  height: 50px;
+  margin-top: 140px;
+  margin-left: 2.5vw;
+  border-radius: 2px;
+}
+.Childsale span{
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.Parentsale .FlashHead{
+  font-size:3.5vw;
+  margin-top: 20px;
+  margin-left: 2.5vw;
+  font-weight: 600;
+}
+
+.Parentsale .Spans{
+  display: flex;
+  position: absolute;
+  margin-left: 30vw;
+  gap: 13vw;
+
+}
+
+.Parentsale .Spansdot{
+  display: flex;
+  position: absolute;
+  margin-left: 40.5vw;
+  gap: 16vw;
+  font-weight: 600;
+  font-size: 3vw;
+  margin-top: 220px;
+  color: red;
+
+}
+.Days h1{
+  margin-top: 200px;
+  margin-left: 30vw;
+  font-weight: 600;
+  font-size: 1.5vw;
+  word-spacing: 2.5vw;
+}
+
+.Spans .hour1{
+  margin-top: 230px;
+  font-weight: 700;
+  margin-left:0vw;
+  font-size: 3vw;
+}
+.Parentsale .Arrowicon2{
+margin-top: 230px;
+font-size: 3vw;
+margin-right: 1vw;
+background-color: lightgray;
+border-radius: 50px;
+}
+
+.Parentfeatured .FeaturedBan {
+  width: 300px;
+  height: 500px;
+  margin-top: 30px; 
+}
+
+.Parentfeatured .FeaturedBan2 {
+  width: 300px;
+  height: 250px;
+  margin-top: 25px;
+}
+
+.Parentfeatured .FeaturedBan3 {
+  width: 140px;
+  height: 210px;
+  margin-left: 330px;
+  margin-top: -230px;
+}
+
+.Parentfeatured .FeaturedBan4 {
+  width: 140px;
+  height: 210px;
+  margin-top: -230px;
+}
+.Parentfooter{
+  margin-top: 100px;
+}
+.Parentfooter .Iconsend{
+  margin-left: 15vw;
+  margin-top: -32px;
+}
+
+.Childfooter6 p{
+  color: gray;
+  opacity: 60%;
+  width: 98.5vw;
+  margin-top: 20px;
+  font-size: 2vw;
+  border-top: 1px solid rgb(70, 70, 70);
+  padding-left: 33vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ChildSign .line{
+  border-bottom: 1px solid gray;
+  padding-top: 140px;
+  width: 97.7vw;
+}
+
+.Buttonwish button{
+  margin-left: 600px;
+  width: auto;
+  margin-top: 130px;
+  padding: 10px 20px 10px 20px;
+}
+.Headwish h1{
+  margin-top: -100px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.Buttonwish button{
+  margin-left: 64vw;
+  width: auto;
+  margin-top: -100px;
+  padding: 10px 20px 10px 20px;
+}
+.JustforHead button{
+  font-size: 3vw;
+  margin-top: 60px;
+  margin-left: 68vw;
+  padding: 10px 5vw 10px 5vw;
+}
+}
+
+
+@media (min-width:1025px) and (max-width:1440px){
+  .Parentheader{
+    width: 100%;
+    height: 70px;
+  }
+  .Childheader h1{
+    position: absolute;
+    margin-top: auto;
+    margin-left: 30vw;
+    font-size: 1.2vw;
+    width: 50%;
+  }
+  
+  .Childheader h2{
+    position: absolute;
+    font-size: 1.4vw;
+    width: 15%;
+    margin-top: 17px;
+    padding-left: -25px;
+  }
+  .Childheader2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-top: 70px;
+    display: flex;
+    position: absolute;
+  }
+  
+  .Childheader2 h1{
+  padding: 45px 85px;
+  font-weight: 700;
+  font-size: 3vw;
+  }
+  .Childheader2 ul{
+    position: absolute;
+    width: 50%;
+    margin-left:30vw;
+    margin-top: 65px;
+    font-size: 1.5vw;
+  }
+  .Childheader2 .Home{
+    height: 30px;
+  }
+  .Childheader2 .inputsearch{
+    position: absolute;
+    margin-left: 62vw;
+    width: 23%;
+    height: 50px;
+    margin-top: 60px;
+    font-size: 15px;
+    background-color: #F5F5F5;
+    padding: 20px;
+  }
+  .Childheader2 .icon{
+    position: absolute;
+    margin-top: 70px;
+    font-size: 28px;
+    margin-left: 82vw;
+  }
+  
+.Content h2{
+  color: #00FF66;
+  margin-top: -400px;
+  margin-left:5vw;
+  font-size: 25px;
+  font-weight: 550;
+}
+.Content h1{
+  color: white;
+  margin-top: 30px;
+  margin-left:5vw;
+  font-size: 35px;
+  font-weight: 550;
+}
+  .Childheader2 .icon2{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 86vw;
+    font-size: 28px;
+  }
+  .Childheader2 .icon3{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 90vw;
+    font-size: 28px;
+  }
+  
+  .Childheader2 .icon4{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 94vw;
+    font-size: 30px;
+  }
+  .Childhero ul{
+    font-weight: 600;
+    margin-left: 7vw;
+    margin-top:20px;
+    line-height: 65px;
+  }
+  .Childhero .Bigbanner{
+    margin-top: -560px;
+    width: 69%;
+    height: 545px;
+  }
+  .Childhero .Iphonelogo{
+    background-color: black;
+    margin-left: 32vw;
+    margin-top: -480px;
+    width: 5%;
+  }
+  .Childhero h1{
+    margin-left: 39vw;
+    color: white;
+    font-size: 2vw;
+    margin-top: -40px;
+  }
+  .Childhero .Heading{
+    margin-top: 30px;
+    margin-left: 32vw;
+    font-weight: 600;
+    font-size: 5vw;
+  }
+  
+  .Childhero button{
+    margin-top: 20px;
+    margin-left: 32vw;
+    color: white;
+    font-size: 3vw;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+  
+  .Childhero .arrowicon{
+    margin-top: -50px;
+    margin-left: 47vw;
+    color: white;
+    font-size: 3.5vw;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+  
+.Childhero .divider{
+  margin-left: 60vw;
+  width: 10%;
+  margin-top: 30px;
+}
+
+.Parentsale .Days{
+  display: flex;
+  position: absolute;
+}
+
+.Childsale .smallbox{
+  background-color: rgb(201, 3, 3);
+  width: 1.5%;
+  height: 50px;
+  margin-top: 140px;
+  margin-left: 7.5vw;
+  border-radius: 2px;
+}
+.Childsale span{
+  color: rgb(201, 3,3);
+  margin-left: 2.5vw;
+}
+.Parentsale .FlashHead{
+  font-size:3.5vw;
+  margin-top: 20px;
+  margin-left: 7.5vw;
+  font-weight: 600;
+}
+
+.Parentsale .Spans{
+  display: flex;
+  position: absolute;
+  margin-left: 30vw;
+  gap: 11vw;
+
+}
+
+.Parentsale .Spansdot{
+  display: flex;
+  position: absolute;
+  margin-left: 37.5vw;
+  gap: 14vw;
+  font-weight: 600;
+  font-size: 2vw;
+  margin-top: 225px;
+  color: red;
+
+}
+.Days h1{
+  margin-top: 200px;
+  margin-left: 30vw;
+  font-weight: 600;
+  font-size: 1.3vw;
+  word-spacing: 2vw;
+}
+
+.Spans .hour1{
+  margin-top: 230px;
+  font-weight: 700;
+  margin-left:0vw;
+  font-size: 2vw;
+}
+.Parentsale .Arrowicon2{
+margin-top: 230px;
+font-size: 2vw;
+margin-right: 2vw;
+background-color: lightgray;
+border-radius: 50px;
+}
+
+.Parentfeatured .FeaturedBan {
+  width: 490px;
+  height: 500px;
+  margin-top: 50px; 
+}
+
+.Parentfeatured .FeaturedBan2 {
+  width: 490px;
+  height: 250px;
+  margin-top: 50px;
+}
+
+.Parentfeatured .FeaturedBan3 {
+  width: 235px;
+  height: 210px;
+  margin-left: 520px;
+  margin-top: -230px;
+}
+
+.Parentfeatured .FeaturedBan4 {
+  width: 235px;
+  height: 210px;
+  margin-top: -230px;
+}
+
+.Parentfooter{
+  margin-top: 100px;
+}
+.Parentfooter .Iconsend{
+  margin-left: 15vw;
+  margin-top: -40px;
+}
+
+.Childfooter6 p{
+  color: gray;
+  opacity: 60%;
+  width: 98.5vw;
+  margin-top: 20px;
+  font-size: 1.5vw;
+  border-top: 1px solid rgb(70, 70, 70);
+  padding-left: 38vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.ChildSign .line{
+  width: 97vw;
+}
+
+.Headwish h1{
+  margin-top: -100px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.Buttonwish button{
+  margin-left: 64vw;
+  width: auto;
+  margin-top: -100px;
+  padding: 10px 20px 10px 20px;
+}
+.JustforHead button{
+  font-size: 2vw;
+  margin-top: 60px;
+  margin-left: 68vw;
+  padding: 10px 5vw 10px 5vw;
+}
+}
+
